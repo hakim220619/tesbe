@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "f51e6b66-8464-4261-a9cc-c6e909d4b228",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23660381"
+	},
+	"item": [
+		{
+			"name": "products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"mie\",\r\n    \"price\": 10000,\r\n    \"stock\": 40,\r\n    \"deskripsi\": \"bawang\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.8:3000/api/createPostProducts",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"8"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"createPostProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "merek",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"sad\",\r\n    \"deskripsi\": \"asd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.8:3000/api/createPostMerk",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"8"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"createPostMerk"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.8:3000/products",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"8"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"mie Sedap\",\r\n    \"price\": 30000,\r\n    \"stock\": 50,\r\n    \"deskripsi\": \"indomie\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "192.168.1.8:3000/api/products/1",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"8"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.8:3000/api/products/3",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"8"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "summaryProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.8:3000/api/summaryProducts",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"8"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"summaryProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProductsById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.8:3000/api/products/2",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"8"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "192.168.1.8:3000/query",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"8"
+					],
+					"port": "3000",
+					"path": [
+						"query"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
